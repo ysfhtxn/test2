@@ -17,6 +17,5 @@ jobs:
           git checkout dd
           cat .build_date.md > date.md
           git checkout main
-          git checkout master -- date.md
           git add date.md
           git commit -m "Adding 'utils' directory from 'master' branch."
