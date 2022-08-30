@@ -26,7 +26,8 @@ jobs:
         git config --global user.name "ysfhtxn"
         git checkout dd
         cat .build_date.md
-        read mm < python mian.py 
+        ls
+        #read mm < python mian.py 
         git checkout main
         echo $mm > post/test.md
         git status
