@@ -27,7 +27,8 @@ jobs:
         git checkout dd
         cat .build_date.md
         ls
-        #read mm < python mian.py 
+        python mian.py > 11.txt
+        read mm < 11.txt
         git checkout main
         echo $mm > post/test.md
         git status
