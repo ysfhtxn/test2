@@ -17,6 +17,7 @@ jobs:
     - name: cp
       run: |
         git status
+        git remote update
         git checkout dd
         echo hello > hi.txt
         git add hi.txt
