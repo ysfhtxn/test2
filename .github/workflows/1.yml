@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+on:
+  push:	
+    branches:	
+      - master
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest    
+    steps:
+    - name: copy
+      uses: actions/checkout@master
+      run: |
+        git status
+        git checkout dd
+        echo hello > hi.txt
+        git add hi.txt
+        git commit -m '.'
+        git checkout main
+        git checkout dd hi.txt
+        git status
