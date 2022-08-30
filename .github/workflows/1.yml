@@ -13,6 +13,6 @@ jobs:
       #- name: Install mustache (to update the date)
        # run:  apk add ruby && gem install mustache
       - name:  copy file gotten
-         run: |
+        run: |
           git checkout main
           git checkout dd .build_date.md
