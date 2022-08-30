@@ -22,11 +22,10 @@ jobs:
         git config --global user.name "ysfhtxn"
         pwd
         ls
-        git checkout dd
-        echo hello > hi.txt
-        ls
+        cat 1.txt
+        read mm < 1.txt
         git checkout main
-        git checkout dd -- hi.txt
+        cat mm
         git status
         pwd
         ls
