@@ -18,9 +18,9 @@ jobs:
           #!/bin/sh
           pwd
           ls
-          git checkout main
+          git checkout dd
           cat .build_date.md > date.md
-          git checkout dd -- date.md
+          
           git add date.md 
           git commit -m 'update .'
           git push origin main
