@@ -21,8 +21,6 @@ jobs:
         git config --global user.email "1121656712@qq.com"
         git config --global user.name "ysfhtxn"
         git checkout dd
-        pwd
-        ls
         cat .build_date.md
         read mm < .build_date.md
         git checkout main
