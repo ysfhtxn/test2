@@ -26,7 +26,7 @@ jobs:
         cat .build_date.md
         read mm < .build_date.md
         git checkout main
-        $mm > test.md
+        echo $mm > test.md
         git status
         pwd
         ls
