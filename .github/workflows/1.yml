@@ -26,9 +26,10 @@ jobs:
         git config --global user.name "ysfhtxn"
         git checkout dd
         cat .build_date.md
+        ls
         read mm < .build_date.md
         git checkout main
-        echo $mm > post/test.md
+        echo date > post/test.md
         git status
         git add .
         git commit -m '.'
