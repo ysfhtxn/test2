@@ -25,8 +25,8 @@ jobs:
         git checkout dd
         echo hello > hi.txt
         ls
-        #git checkout main
-        #git checkout dd hi.txt
+        git checkout main
+        git checkout dd -- hi.txt
         git status
         pwd
         ls
