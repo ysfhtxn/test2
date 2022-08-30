@@ -18,6 +18,8 @@ jobs:
       run: |
         git status
         git remote update
+        git config --global user.email "1121656712@qq.com"
+        git config --global user.name "ysfhtxn"
         git checkout dd
         echo hello > hi.txt
         git add hi.txt
