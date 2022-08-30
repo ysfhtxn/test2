@@ -25,7 +25,7 @@ jobs:
         cat 1.txt
         read mm < 1.txt
         git checkout main
-        cat mm
+        echo mm
         git status
         pwd
         ls
