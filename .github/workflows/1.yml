@@ -1,0 +1,22 @@
+name: AutoCopy
+
+on:
+  push:
+    branches: dd
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      #- name: Install mustache (to update the date)
+       # run:  apk add ruby && gem install mustache
+      - name:  copy file gotten
+        run: |
+          git checkout dd
+          cat .build_date.md > date.md
+          git checkout main
+          git checkout master -- date.md
+          git add date.md
+          git commit -m "Adding 'utils' directory from 'master' branch."
