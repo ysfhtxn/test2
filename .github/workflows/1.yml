@@ -28,6 +28,6 @@ jobs:
         git checkout main
         echo $mm > post/test.md
         git status
-        git add test.md
+        git add .
         git commit -m '.'
         git push origin main
