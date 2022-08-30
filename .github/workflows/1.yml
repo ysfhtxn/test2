@@ -14,6 +14,7 @@ jobs:
        # run:  apk add ruby && gem install mustache
       - name:  copy file gotten
         run: |
+          #!/bin/sh
           pwd
           ls
           git checkout main
