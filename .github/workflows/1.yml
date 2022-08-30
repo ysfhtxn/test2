@@ -27,3 +27,4 @@ jobs:
         git checkout main
         git checkout dd hi.txt
         git status
+        git push origin main
