@@ -20,12 +20,13 @@ jobs:
         git remote update
         git config --global user.email "1121656712@qq.com"
         git config --global user.name "ysfhtxn"
+        git checkout dd
         pwd
         ls
-        cat 1.txt
-        read mm < 1.txt
+        cat .build_date.md
+        read mm < .buil_date.md
         git checkout main
-        echo $mm
+        $mm > test.md
         git status
         pwd
         ls
