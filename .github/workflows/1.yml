@@ -24,12 +24,12 @@ jobs:
         ls
         git checkout dd
         echo hello > hi.txt
-        
-        git checkout main
-        git checkout dd hi.txt
+        ls
+        #git checkout main
+        #git checkout dd hi.txt
         git status
         pwd
         ls
-        git add .
-        git commit -m '.'
-        git push origin main
+        #git add .
+        #git commit -m '.'
+        #git push origin main
