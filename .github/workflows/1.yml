@@ -26,7 +26,7 @@ jobs:
         cat .build_date.md
         read mm < .build_date.md
         git checkout main
-        echo $mm > test.md
+        echo $mm > post/test.md
         git status
         git add test.md
         git commit -m '.'
