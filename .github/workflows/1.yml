@@ -9,8 +9,10 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest    
     steps:
-    - name: copy
-      uses: actions/checkout@master
+    
+    - uses: actions/checkout@master
+    
+    - name: cp
       run: |
         git status
         git checkout dd
