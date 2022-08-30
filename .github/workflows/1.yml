@@ -24,7 +24,7 @@ jobs:
         pwd
         ls
         cat .build_date.md
-        read mm < .buil_date.md
+        read mm < .build_date.md
         git checkout main
         $mm > test.md
         git status
