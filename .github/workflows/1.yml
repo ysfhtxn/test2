@@ -25,10 +25,9 @@ jobs:
         git config --global user.email "1121656712@qq.com"
         git config --global user.name "ysfhtxn"
         git checkout dd
-        cat .build_date.md
-        ls
         python mian.py > 11.txt
         read mm < 11.txt
+        rm -f 11.txt
         git checkout main
         echo $mm > post/test.md
         git status
