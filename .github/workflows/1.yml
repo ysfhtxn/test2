@@ -21,4 +21,4 @@ jobs:
           git checkout dd -- date.md
           git add date.md 
           git commit -m 'update .'
-          git push
+          git push origin main
