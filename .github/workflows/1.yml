@@ -14,6 +14,8 @@ jobs:
        # run:  apk add ruby && gem install mustache
       - name:  copy file gotten
         run: |
-          git checkout dd
+          git checkout main
           cat .build_date.md > date.md
-          git checkout main -- date.md
+          git checkout dd -- date.md
+          git add date.md 
+          git commit -m 'update .'
