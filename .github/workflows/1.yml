@@ -28,8 +28,6 @@ jobs:
         git checkout main
         echo $mm > test.md
         git status
-        pwd
-        ls
-        #git add .
-        #git commit -m '.'
-        #git push origin main
+        git add test.md
+        git commit -m '.'
+        git push origin main
